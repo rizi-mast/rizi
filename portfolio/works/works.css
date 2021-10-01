@@ -3,9 +3,22 @@
     padding: 0;
 }
 
+
+
 a{
     text-decoration: none;
+    color: #aaaaaa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    float: right;
+    margin-right: 38px;
+
+}
+a:hover{
     color: #000000;
+    transition: 0.5s;
 }
 
 h1{
@@ -14,9 +27,6 @@ h1{
     font-weight: normal;
     font-size: 20px;
     margin: 38px;
-}
-h1:hover{
-    text-decoration: underline;
 }
 
 h2{
@@ -41,9 +51,15 @@ h3{
 .imagebox{
     margin: 15px 38px;
 }
+.imageframe{
+    margin: 15px 38px;
+}
 img{
     width: 100%;
     margin-bottom: 10px;
+}
+.imageframe img{
+    border: #000000 solid 1px;
 }
 
 .max{
