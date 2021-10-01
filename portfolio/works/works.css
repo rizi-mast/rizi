@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+h1{
+    font-family: Futura;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 38px;
+}
+h1:hover{
+    text-decoration: underline;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 38px;
+    margin-top: 100px;
+}
+
+h3{
+    color: #aaaaaa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 38px;
+    margin-top: 100px;
+}
+
+.imagebox{
+    margin: 15px 38px;
+}
+img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.max{
+    max-width: 1680px;
+    max-height: 945px;
+    margin: 0 38px;
+}
+.frame{
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    color: #aaaaaa;
+    text-align: center;
+    padding: 50px 0 10px;
+}

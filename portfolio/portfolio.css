@@ -7,8 +7,8 @@ h1{
     font-family: Futura;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    margin: 30px;
+    font-size: 20px;
+    margin: 38px;
 }
 
 .thumbnail{
@@ -17,10 +17,31 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.thumbnail img{
+.dissolve{
     width: 47%;
+    margin: 5px;
+    position: relative;
+}
+.dissolve .caption{
+    position: absolute;
+    padding: 30px;
+    background-color: #ffffff;
+    top: 0px;
+    width: 95%;
+    height: 92%;
+    opacity: 0;
+}
+.dissolve .caption:hover{
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.caption p{
+    color: #333333;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.thumbnail img{
+    width: 100%;
     border: #333333 solid 1px;
-    margin: 10px;
 }
 
 footer{
