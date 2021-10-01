@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Rizi</title>
+    <script>
+        function calcParallax(tileheight, speedratio, scrollposition) {
+        //    by Brett Taylor http://inner.geek.nz/
+        //    originally published at http://inner.geek.nz/javascript/parallax/
+        //    usable under terms of CC-BY 3.0 licence
+        //    http://creativecommons.org/licenses/by/3.0/
+        return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
+        }
+        window.onload = function() {
+        window.onscroll = function() {
+            var posX = (document.documentElement.scrollLeft) ? document.documentElement.scrollLeft : window.pageXOffset;
+            var posY = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : window.pageYOffset;
+        
+            var ground = document.getElementById('header');
+            var groundparallax = calcParallax(3000, 3, posY);
+            ground.style.backgroundPosition = "0 " + groundparallax + "px"; 
+        
+            var clouds = document.getElementById('works');
+            var cloudsparallax = calcParallax(4000, .8, posY);
+            clouds.style.backgroundPosition = "0 " + cloudsparallax + "px"; 
+
+            var clouds = document.getElementById('main');
+            var cloudsparallax = calcParallax(3000, 3, posY);
+            clouds.style.backgroundPosition = "0 " + cloudsparallax + "px"; 
+        }
+        }
+    </script>
+</head>
+
+<header id="header">
+    
+    <div class="logo">
+        <img src="images/logo.png" alt="" width="100%">
+    </div>
+</header>
+
+<body>
+    <div id="works">
+        <h2>Works</h2>
+        <div class="samune">
+            <img src="images/thumbnail/tig2021.png" alt="">
+            <img src="images/thumbnail/hushiginatsubo.png" alt="">
+            <img src="images/thumbnail/zinseinoichinichi.png" alt="">
+            <img src="images/thumbnail/onepiece_pic.png" alt="">
+            <img src="images/thumbnail/snowman.png" alt="">
+            <img src="images/thumbnail/kaihouhenoizanai.png" alt="">
+            <img src="images/thumbnail/tmp_pv.png" alt="">
+        </div>
+        <!-- <div class="samune0">
+            <img src="images/thumbnail/hushiginatsubo.png" alt="">
+            <img src="images/thumbnail/zinseinoichinichi.png" alt="">
+            <img src="images/thumbnail/onepiece_pic.png" alt="">
+            <img src="images/thumbnail/snowman.png" alt="">
+            <img src="images/thumbnail/kaihouhenoizanai.png" alt="">
+            <img src="images/thumbnail/tmp_pv.png" alt="">
+            <img src="images/thumbnail/tig2021.png" alt="">
+        </div> -->
+        <div class="portfolio">
+            <a href="portfolio/portfolio.html" target="_blank" rel="noopener noreferrer">To Portfolio</a>
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <div id="news">
+            <img src="images/news.png" alt="" width="50%">
+            <div class="news-slide"><div class="fadeslide">
+                <div><a href=""><img src="images/news1.png"></a></div>
+                <div><a href=""><img src="images/news2.png"></a></div>
+                <div><a href=""><img src="images/news3.png"></a></div>
+            </div></div>
+        </div>
+
+        <div id="about">
+            <div class="text">
+                <div class="exp">
+                    <p>永石昂大
+                    <br>2000年宮崎生まれ
+                    <br>筑波大学在学中
+                    <br>映像制作 / 動画カメラマン / ラジオディレクター
+                    <br>時々DJ</p>
+                </div>
+                <div class="exp">
+                    <p>Nagaishi Koudai
+                    <br>Born in 2000 in Miyazaki, JPN
+                    <br>Enrolled in University of Tsukuba
+                    <br>Movie Creator / Videographer / Radio Director
+                    <br>Sometimes DJ</p>
+                </div>
+            </div>
+            <img src="images/about.png" alt="" width="50%">
+        </div>
+
+        <div id="contact">
+            <img src="images/contact.png" alt="" width="50%">
+            <div class="button">
+                <div class="gf">
+                   <a href="https://docs.google.com/forms/d/e/1FAIpQLScOqWxwxLZMUF-F8PwvNkp1hHzAjFNzO6T4psDT7NSgXQdk4Q/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">To Contact Form</a>
+                </div>
+                <h3>SNS</h3>
+                <div class="sns">
+                    <a href="https://www.facebook.com/profile.php?id=100062625845886"><img src="images/facebook.png" alt="" width="100%"><p>Facebook</p></a>
+                    <a href="https://www.youtube.com/channel/UCI56rASkcx5A_lQihgn2H0Q"><img src="images/youtube.png" alt="" width="100%"><p>YouTube</p></a>
+                    <a href="https://twitter.com/nagaishikoudai"><img src="images/twitter.png" alt="" width="100%"><p>Twitter</p></a>
+                    <a href="https://www.instagram.com/nagaishi_mast19/"><img src="images/instagram.png" alt="" width="100%"><p>Instagram</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p>&copy; Rizi</p>
+</footer>
+</html>

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #031116;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-image: url('../images/bg40.png'), url('../images/bg20.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#works{
+    background-color: #031116;
+    background-image: url('../images/bg_riq.png'), url('../images/works_bg.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+#works h2{
+    color: #ffffff;
+    font-family: copperplate;
+    font-size: 140px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+.samune{
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 100px;
+}
+.samune img{
+    width: 45%;
+    margin: 50px 10px 0;
+}
+.samune0{
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 100px;
+    z-index: 3;
+}
+.samune0 img{
+    width: 45%;
+    margin: 50px 10px 0;
+}
+.portfolio{
+    margin-top: 140px;
+}
+#works a{
+    color: #000000;
+    font-size: 15px;
+    font-family: futura;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 8px 64px;
+    border-radius: 15px;
+    text-align: center;
+}
+#works a:hover{
+    color: #ffffff;
+    background-color: #ff0089;
+    transition: 0.5s;
+}
+
+p{
+    color: #ffffff;
+}
+
+.main{
+    background-color: #031116;
+    padding: 30px;
+    background-image: url('../images/bg40.png'), url('../images/bg20.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.news-slide{
+    padding: 50px;
+    padding-right: 100px;
+}
+.fadeslide {
+	position: relative;
+	width: 480px;
+    height: 270px;
+	overflow: hidden;
+	z-index: 0;
+}
+.fadeslide img{
+    width: 100%;
+}
+.fadeslide div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fadeslide div:nth-of-type(1) {
+	animation: fadeslide 24s 0s infinite both;
+	z-index: 6;
+}
+.fadeslide div:nth-of-type(2) {
+	animation: fadeslide 24s 8s infinite both;
+	z-index: 5;
+}
+.fadeslide div:nth-of-type(3) {
+	animation: fadeslide 24s 16s infinite both;
+	z-index: 4;
+}
+@keyframes fadeslide {
+	0% { left: 0; opacity: 0; }
+	5% { left: 0; opacity: 1; }
+	20% { left: 0; opacity: 1; }
+	25% { left: 0; opacity: 0; }
+	26% { left: 100%; opacity: 0; }
+	100% { left: 100%; opacity: 0; }
+}
+
+#about{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.exp{
+    margin: 60px 0;
+}
+.text{
+    padding-left: 120px;
+    width: 40%;
+}
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gf{
+    text-align: center;
+}
+.gf a{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: futura;
+    text-decoration: none;
+    border: #ffffff solid 3px;
+    padding: 20px 22%;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.gf a:hover{
+    color: #031116;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+.button h3{
+    font-size: 30px;
+    font-family: futura;
+    margin: 75px auto 10px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.sns{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sns a{
+    text-decoration: none;
+    border-bottom: #031116 solid 10px;
+}
+.sns p{
+    font-family: futura;
+    font-size: 15px;
+}
+
+.sns a:hover{
+    border-bottom: #ffffff solid 10px;
+    transition: 0.5s;
+}
+
+
+footer{
+    background-color: #ff0089;
+    text-align: center;
+}
+
+@media screen and (max-width:479px){
+    .logo img{
+        width: 250%;
+        transform: translateX(-30%);
+    }
+}
+

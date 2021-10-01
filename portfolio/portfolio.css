@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: Futura;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail img{
+    width: 47%;
+    border: #333333 solid 1px;
+    margin: 10px;
+}
+
+footer{
+    color: #aaaaaa;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+
+@media screen and (max-width:479px){
+    h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .thumbnail img{
+        width: 94%;
+    }
+}
