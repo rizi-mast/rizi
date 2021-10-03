@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
     <title>Rizi</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <meta name="description" content="りじのホームページです。">
@@ -63,6 +67,12 @@
     </div>
     <div class="logo">
         <img src="images/logo.png" alt="" width="100%">
+        <div class="nav-slide"><div class="fadeslide">
+            <div><img src="images/works_tx.png" alt="" width="50%" class="nav01"></div>
+            <div><img src="images/news_tx.png" alt="" width="50%" class="nav02"></div>
+            <div><img src="images/about_tx.png" alt="" width="50%" class="nav03"></div>
+            <div><img src="images/contact_tx.png" alt="" width="50%" class="nav04"></div>
+        </div></div>
         <a href="#works"><img src="images/works.png" alt="" width="50%" class="nav1"></a>
         <a href="#news"><img src="images/news.png" alt="" width="50%" class="nav2"></a>
         <a href="#about"><img src="images/about.png" alt="" width="50%" class="nav3"></a>
@@ -71,56 +81,62 @@
 </header>
 
 <body>
-    <div id="works">
+    <div id="works"><div class="visible-one">
         <h2>Works</h2>
-        <div class="samune">
-            <img src="images/thumbnail/tig2021.png" alt="">
-            <img src="images/thumbnail/hushiginatsubo.png" alt="">
-            <img src="images/thumbnail/zinseinoichinichi.png" alt="">
-            <img src="images/thumbnail/onepiece_pic.png" alt="">
-            <img src="images/thumbnail/snowman.png" alt="">
-            <img src="images/thumbnail/kaihouhenoizanai.png" alt="">
-            <img src="images/thumbnail/tmp_pv.png" alt="">
+        <div class="wrap">
+            <div class="samune">
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/tig2021.png" alt=""><a href=""><img src="images/thumbnail/tig2021_hover.png" alt="" class="hover"></a></div>
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/hushiginatsubo.png" alt=""><a href=""><img src="images/thumbnail/hushiginatsubo_hover.png" alt="" class="hover"></a></div>
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/zinseinoichinichi.png" alt=""><a href=""><img src="images/thumbnail/zinseinoichinichi_hover.png" alt="" class="hover"></a></div>
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/onepiece_pic.png" alt=""><a href=""><img src="images/thumbnail/pic_hover.png" alt="" class="hover"></a></div>
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/snowman.png" alt=""><a href=""><img src="images/thumbnail/snowdome_hover.png" alt="" class="hover"></a></div>
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/kaihouhenoizanai.png" alt=""><a href=""><img src="images/thumbnail/kaihouenoezanai_hover.png" alt="" class="hover"></a></div>
+                <div class="sakuhin" style="display:inline;"><img src="images/thumbnail/tmp_pv.png" alt=""><a href=""><img src="images/thumbnail/tmp_pv_hover.png" alt="" class="hover"></a></div>
+            </div>
         </div>
         <div class="portfolio">
-            <a href="portfolio/portfolio.html" target="_blank" rel="noopener noreferrer">To Portfolio</a>
+            <a href="portfolio/portfolio.html">To Portfolio</a>
         </div>
-    </div>
+    </div></div>
 
     <div class="main" id="main">
-        <div id="news">
+        <div id="news" class="visible1">
             <img src="images/news.png" alt="" width="50%" class="sp">
-            <div class="news-slide"><div class="fadeslide">
-                <div><a href="#news0"><img src="images/news1.png"></a></div>
-                <div><a href="#news00"><img src="images/news2.png"></a></div>
-                <div><a href="#news000"><img src="images/news3.png"></a></div>
-                <a id="news0" href="#close" class="lb"><img src="images/news1.png"></a>
-                <a id="news00" href="#close" class="lb"><img src="images/news2.png"></a>
-                <a id="news000" href="#close" class="lb"><img src="images/news3.png"></a>
-            </div></div>
+            <div class="newslist">
+                <ul class="slider">
+                    <li><a href="#news0"><img src="images/news1.png"></a></li>
+                    <li><a href="#news00"><img src="images/news2.png"></a></li>
+                    <li><a href="#news000"><img src="images/news3.png"></a></li>
+                </ul>
+            </div>
+            <a id="news0" href="#close" class="lb"><img src="images/news1.png"></a>
+            <a id="news00" href="#close" class="lb"><img src="images/news2.png"></a>
+            <a id="news000" href="#close" class="lb"><img src="images/news3.png"></a>        
         </div>
 
-        <div id="about">
-            <div class="text">
-                <div class="exp">
-                    <p>永石昂大
-                    <br>2000年宮崎生まれ
-                    <br>筑波大学在学中
-                    <br>映像制作 / 動画カメラマン / ラジオディレクター
-                    <br>時々DJ</p>
-                </div>
-                <div class="exp">
-                    <p>Nagaishi Koudai
-                    <br>Born in 2000 in Miyazaki, JPN
-                    <br>Enrolled in University of Tsukuba
-                    <br>Movie Creator / Videographer / Radio Director
-                    <br>Sometimes DJ</p>
+        <div id="about" class="visible2">
+            <div class="aboutlist">
+                <div class="text">
+                    <div class="exp">
+                        <p>永石昂大
+                        <br>2000年宮崎生まれ
+                        <br>筑波大学在学中
+                        <br>映像制作 / 動画カメラマン / ラジオディレクター
+                        <br>時々DJ</p>
+                    </div>
+                    <div class="exp">
+                        <p>Nagaishi Koudai
+                        <br>Born in 2000 in Miyazaki, JPN
+                        <br>Enrolled in University of Tsukuba
+                        <br>Movie Creator / Videographer / Radio Director
+                        <br>Sometimes DJ</p>
+                    </div>
                 </div>
             </div>
             <img src="images/about.png" alt="" width="50%" class="sp">
         </div>
 
-        <div id="contact">
+        <div id="contact" class="visible1">
             <img src="images/contact.png" alt="" width="50%" class="sp">
             <div class="button">
                 <div class="gf">
@@ -128,14 +144,74 @@
                 </div>
                 <h3>SNS</h3>
                 <div class="sns">
-                    <a href="https://www.facebook.com/profile.php?id=100062625845886"><img src="images/facebook.png" alt="" width="100%" class="snssp"><p>Facebook</p></a>
-                    <a href="https://www.youtube.com/channel/UCI56rASkcx5A_lQihgn2H0Q"><img src="images/youtube.png" alt="" width="100%" class="snssp"><p>YouTube</p></a>
-                    <a href="https://twitter.com/nagaishikoudai"><img src="images/twitter.png" alt="" width="100%" class="snssp"><p>Twitter</p></a>
-                    <a href="https://www.instagram.com/nagaishi_mast19/"><img src="images/instagram.png" alt="" width="100%" class="snssp"><p>Instagram</p></a>
+                    <a href="https://www.facebook.com/profile.php?id=100062625845886" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="" width="100%" class="snssp"><p>Facebook</p></a>
+                    <a href="https://www.youtube.com/channel/UCI56rASkcx5A_lQihgn2H0Q" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png" alt="" width="100%" class="snssp"><p>YouTube</p></a>
+                    <a href="https://twitter.com/nagaishikoudai" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="" width="100%" class="snssp"><p>Twitter</p></a>
+                    <a href="https://www.instagram.com/nagaishi_mast19/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="" width="100%" class="snssp"><p>Instagram</p></a>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $('.slider').slick({
+            autoplay:true,
+            autoplaySpeed:5000,
+            dots:true,
+        });
+
+        $(function() {
+            $('.visible-one').one('inview', function(event, isInView) {
+            //一度のみのinviewの際は　.oneにする
+                if (isInView) {
+                    // .visibleがビューポートに入った場合
+                    $(this).stop().addClass('effect');
+                } else {
+                    // .visibleがビューポートにから抜けた場合
+                    $(this).stop().removeClass('effect');
+                }
+                //$('#footer').off('inview');
+            });
+        });
+        $(function() {
+            $('.sp').on('inview', function(event, isInView) {
+            //一度のみのinviewの際は　.oneにする
+                if (isInView) {
+                    // .visibleがビューポートに入った場合
+                    $(this).addClass('effect');
+                } else {
+                    // .visibleがビューポートにから抜けた場合
+                    $(this).removeClass('effect');
+                }
+                //$('#footer').off('inview');
+            });
+        });
+        $(function() {
+            $('.visible1').one('inview', function(event, isInView) {
+            //一度のみのinviewの際は　.oneにする
+                if (isInView) {
+                    // .visibleがビューポートに入った場合
+                    $(this).addClass('effect');
+                } else {
+                    // .visibleがビューポートにから抜けた場合
+                    $(this).removeClass('effect');
+                }
+                //$('#footer').off('inview');
+            });
+        });
+        $(function() {
+            $('.visible2').one('inview', function(event, isInView) {
+            //一度のみのinviewの際は　.oneにする
+                if (isInView) {
+                    // .visibleがビューポートに入った場合
+                    $(this).addClass('effect');
+                } else {
+                    // .visibleがビューポートにから抜けた場合
+                    $(this).removeClass('effect');
+                }
+                //$('#footer').off('inview');
+            });
+        });
+    </script>
 </body>
 
 <footer>
