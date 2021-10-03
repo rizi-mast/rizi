@@ -677,8 +677,23 @@ footer{
     #works h2{
         font-size: 50px;
     }
+    .samune{
+        width: 80%;
+    }
+    .newslist{
+        margin-bottom: 100px;
+    }
+    .aboutlist{
+        margin-bottom: 100px;
+    }
+    .button{
+        margin-bottom: 50px;
+    }
     footer{
         font-size: 5px;
+    }
+    .visible1, .visible2{
+        transform: translate(0, 0);
     }
 }
 
